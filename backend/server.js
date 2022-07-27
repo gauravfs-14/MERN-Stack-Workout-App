@@ -1,19 +1,16 @@
 //import required dependiencies
 const express = require("express");
+const workoutRoutes = require("./routes/workouts");
 require("dotenv").config();
 
 //initialize the express app
 const app = express();
 
-//routes
+//middlewares
+app.use(express.json());
 
-/*
-GET /wourkouts
-Gets all the workout document
-*/
-app.get("/workouts", (req, res) => {
-  res.send("Hello Server!");
-});
+//routes
+app.use("/api/workouts", workoutRoutes);
 
 //listen to the server
 app.listen(process.env.PORT, () => {
