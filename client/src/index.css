@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    height: 60px;
+    width: minmax(100vh, 100vh);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.pages{
+    margin-top: 60px;
+    padding: 2rem;
+}
+.workout_container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.workout_details{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.workout_details h4{
+    color: aquamarine;
+    margin: 0 0 1rem 0;
+}
+.workout_details > p{
+    margin: 0 0 .5rem 0;
+}
