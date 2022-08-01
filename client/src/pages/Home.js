@@ -1,6 +1,9 @@
-const home = ({ data }) => {
+import WorkoutForm from "../components/WorkoutForm";
+
+const home = ({ data, fetchData }) => {
   return (
     <div className="workout_container">
+      <WorkoutForm fetchData={fetchData} />
       {data &&
         data.map((workout) => (
           <>

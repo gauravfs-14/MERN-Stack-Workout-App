@@ -41,3 +41,30 @@ a{
 .workout_details > p{
     margin: 0 0 .5rem 0;
 }
+.createWorkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: .5rem;
+}
+.createWorkout > input{
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .2rem;
+    border-bottom: 2px solid aquamarine;
+}
+.createWorkout > button{
+    color: white;
+    background-color: transparent;
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}

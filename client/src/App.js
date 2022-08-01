@@ -21,7 +21,10 @@ function App() {
       <Navbar />
       <div className="pages">
         <Routes>
-          <Route path="/" element={<Home data={workouts} />} />
+          <Route
+            path="/"
+            element={<Home data={workouts} fetchData={fetchData} />}
+          />
         </Routes>
       </div>
     </div>
