@@ -41,6 +41,16 @@ a{
 .workout_details > p{
     margin: 0 0 .5rem 0;
 }
+.workout_details > div{
+    display: flex;
+    gap: 1rem;
+}
+.delete, .update{
+    cursor: pointer;
+}
+.delete:hover, .update:hover{
+    color: aquamarine;
+}
 .createWorkout{
     display: flex;
     justify-content: center;

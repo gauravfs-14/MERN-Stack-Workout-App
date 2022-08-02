@@ -1,3 +1,4 @@
+import WorkoutCard from "../components/WorkoutCard.js";
 import WorkoutForm from "../components/WorkoutForm";
 
 const home = ({ data, fetchData }) => {
@@ -7,18 +8,7 @@ const home = ({ data, fetchData }) => {
       {data &&
         data.map((workout) => (
           <>
-            <div className="workout_details" key={workout._id}>
-              <h4>{workout.title}</h4>
-              <p>
-                <strong>Load (kg):</strong>
-                {workout.load}
-              </p>
-              <p>
-                <strong>Reps:</strong>
-                {workout.reps}
-              </p>
-              <p>{workout.createdAt}</p>
-            </div>
+            <WorkoutCard key={workout._id} workout={workout} fetchData ={fetchData} />
           </>
         ))}
     </div>
